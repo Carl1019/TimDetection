@@ -10,3 +10,6 @@ Configuration:
 1. pip YOLO v8: 
     1. pip install ultralytics wandb opencv-python matplotlib
 2. 
+
+Plan:
+1. use part of the original dataset try to train our model before we are going to use better GPUs
