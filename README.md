@@ -9,7 +9,20 @@ Process Description:
 Configuration:
 1. pip YOLO v8: 
     1. pip install ultralytics wandb opencv-python matplotlib
-2. 
+2. pip CUDA GPU
+    1. pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
+3. if accidently interrupt:
+    1. python train.py --resume
 
-Plan:
-1. use part of the original dataset try to train our model before we are going to use better GPUs
+Problems:
+1. mandb virtualize tool use or not? prob use for virtualiza, and shows in report.
+2. watch out the file path in data.yaml(better use absolute path for all path!)
+3. When running the script, I found that there is a multi-process error, which be solved by use(if __name__ == "__main__":)
+4. Does 50 epoches too many?
+
+
+Plans:
+1. use part of the original dataset try to train our model before we are going to use better GPUs(no need, don't want the hassle of changing files, and I tried to use the whole dataset and the training speed is not that slow)
+2. use a new file to detect the metrics of the model(mAP、percision、recall)
+3. use a new file to test the testset
+4. try to use mandb to virtualize the traning.
