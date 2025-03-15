@@ -4,10 +4,3 @@ test: ../test/images
 
 nc: 2
 names: ['Cup', 'Timmies']
-
-roboflow:
-  workspace: syde770group8-9fhac
-  project: syde770_timmies
-  version: 16
-  license: CC BY 4.0
-  url: https://universe.roboflow.com/syde770group8-9fhac/syde770_timmies/dataset/16
