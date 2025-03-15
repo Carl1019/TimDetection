@@ -4,6 +4,10 @@ Process Description:
     1. Problem:some file has long path which can not be resolved by windows, so I just delete it(two images and two labels).
     2. Delete roboflow related stuff in the data.yaml
 2. Create traning codes
+    1. forbidden mandb
+    2. set epoches to 50
+        1. After 40 rounds, there is a command: Closing dataloader mosaic, ignore it, let training keep going
+    3. Todo tunning!
 3. TODO...
 
 Configuration:
