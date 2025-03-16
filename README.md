@@ -13,6 +13,9 @@ Process Description:
     2. test on testset
     3. print metrics
 4. Try tunning hyper-parameter(grid, random, wandb)
+    1. use random search
+    2. record all the parameters
+    3. different best hyper-parameter based on different metric
     
 Configuration:
 1. pip YOLO v8: 
@@ -29,6 +32,8 @@ Problems:
 4. Does 50 epoches too many?
 5. File 转义error when loading models, solution: preceded by r
 6. model.val should be followed by the absolute path and split test dataset
+
+7. using vscode run the file, cannot just use the run botton, that will cause path problem, just python ***.py
 
 
 Plans:
