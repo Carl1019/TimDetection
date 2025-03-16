@@ -5,7 +5,7 @@ def test_yolo():
     model = YOLO(r"D:\SYDE770 Project\TimDetection\runs\detect\First_success_tranining\weights\best.pt")
     # 在测试集上评估模型
     metrics = model.val(data="D:/SYDE770 Project/TimDetection/Dataset/data.yaml", split="test")
-    print(metrics)  # 打印评估结果
+    print(metrics) 
 
 if __name__ == "__main__":
     test_yolo()
