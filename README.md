@@ -12,8 +12,8 @@ Process Description:
     1. load model
     2. test on testset
     3. print metrics
+4. Try tunning hyper-parameter(grid, random, wandb)
     
-
 Configuration:
 1. pip YOLO v8: 
     1. pip install ultralytics wandb opencv-python matplotlib
