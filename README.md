@@ -16,7 +16,15 @@ Process Description:
     1. use random search
     2. record all the parameters
     3. different best hyper-parameter based on different metric
-    
+5. integrate WANDB
+    1. 注册WANDB
+    2. 在控制台login API
+    3. 检查status
+    4. 尝试运行Test_WANDB,并检查WANDB网站上的内容
+    5. 将WANDB集成到test，train，tunning
+    6. 将epoch设小(不吃GPU了)，运行，检查可视化
+
+
 Configuration:
 1. pip YOLO v8: 
     1. pip install ultralytics wandb opencv-python matplotlib
@@ -24,7 +32,8 @@ Configuration:
     1. pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
 3. if accidently interrupt:
     1. python train.py --resume
-
+4. Upgrade and pip WANDB:
+    1. pip install --upgrade wandb
 Problems:
 1. mandb virtualize tool use or not? prob use for virtualiza, and shows in report.
 2. watch out the file path in data.yaml(better use absolute path for all path!)
@@ -34,10 +43,11 @@ Problems:
 6. model.val should be followed by the absolute path and split test dataset
 
 7. using vscode run the file, cannot just use the run botton, that will cause path problem, just python ***.py
-
+8. WANDB API access problem, not solved, I messed it up in my computer.
 
 Plans:
 1. use part of the original dataset try to train our model before we are going to use better GPUs(no need, don't want the hassle of changing files, and I tried to use the whole dataset and the training speed is not that slow)
 2. use a new file to detect the metrics of the model(mAP、percision、recall)
 3. use a new file to test the testset
-4. try to use mandb to virtualize the traning.
+4. use a new file to tunning the moddel
+4. try to use mandb to virtualize the traning.***
