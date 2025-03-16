@@ -5,10 +5,14 @@ Process Description:
     2. Delete roboflow related stuff in the data.yaml
 2. Create traning codes
     1. forbidden mandb
-    2. set epoches to 50
-        1. After 40 rounds, there is a command: Closing dataloader mosaic, ignore it, let training keep going
+    2. set epoches to 50(YOLO v8 default 100 epoches)
+        1. After 40 rounds, there is a command: "Closing dataloader mosaic", ignore it, let training keep going
     3. Todo tunning!
-3. TODO...
+3. Creat test code
+    1. load model
+    2. test on testset
+    3. print metrics
+    
 
 Configuration:
 1. pip YOLO v8: 
@@ -23,6 +27,8 @@ Problems:
 2. watch out the file path in data.yaml(better use absolute path for all path!)
 3. When running the script, I found that there is a multi-process error, which be solved by use(if __name__ == "__main__":)
 4. Does 50 epoches too many?
+5. File 转义error when loading models, solution: preceded by r
+6. model.val should be followed by the absolute path and split test dataset
 
 
 Plans:
