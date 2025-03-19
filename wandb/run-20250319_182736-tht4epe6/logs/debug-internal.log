@@ -1,0 +1,7 @@
+{"time":"2025-03-19T18:27:36.97139854-04:00","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"/home/student08/TimDetection/wandb/run-20250319_182736-tht4epe6/logs/debug-core.log"}
+{"time":"2025-03-19T18:27:37.076584855-04:00","level":"INFO","msg":"created new stream","id":"tht4epe6"}
+{"time":"2025-03-19T18:27:37.076611516-04:00","level":"INFO","msg":"stream: started","id":"tht4epe6"}
+{"time":"2025-03-19T18:27:37.076646803-04:00","level":"INFO","msg":"writer: Do: started","stream_id":"tht4epe6"}
+{"time":"2025-03-19T18:27:37.076669597-04:00","level":"INFO","msg":"handler: started","stream_id":"tht4epe6"}
+{"time":"2025-03-19T18:27:37.076706147-04:00","level":"INFO","msg":"sender: started","stream_id":"tht4epe6"}
+{"time":"2025-03-19T18:27:37.237381246-04:00","level":"INFO","msg":"Starting system monitor"}

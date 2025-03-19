@@ -3,8 +3,8 @@ import os
 import time
 import wandb 
 
-Project_Name = "YOLO_Tim"
-Run_Name = "training test 11"
+Project_Name = "YOLO_Tim_nubula"
+Run_Name = "training1"
 
 
 def on_train_epoch_end(trainer):
@@ -34,17 +34,18 @@ def train_yolo():
     model.add_callback("on_train_epoch_end", on_train_epoch_end)
     model.train(
         data="Dataset/data.yaml",
-        epochs=5,  # 只测试一个 epoch
-        batch=1,  # 使用较小的 batch
-        imgsz=64,  # 缩小图片尺寸
-        optimizer="Adam",  # 使用更快的 Adam 优化器
-        lr0=0.001,  # 调整学习率
-        weight_decay=0.0005,
-        dropout=0.0,  # 关闭 dropout
-        device="cpu",  # 使用 CPU（如果没有 GPU）
-        project="runs/WB_experiment",
-        name="training test",
+        epochs=100,
+        batch=32,
+        imgsz=640,
+        optimizer="SGD",
+        lr0=0.003,
+        lrf=0.01,
+        device="cuda",  # 使用 GPU
+        #patience=5,
+        project="runs/Nebula11_experiment2",
+        name="first_training_with_Nebula-11_metrics"
     )
+
 if __name__ == "__main__":
     # 初始化 wandb
     run = wandb.init(project=Project_Name, name=Run_Name)

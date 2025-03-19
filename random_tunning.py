@@ -24,7 +24,7 @@ def tunning():
 
         model.train(
             data="Dataset/data.yaml",
-            epochs=1,
+            epochs=50,
             batch=params["batch"],
             lr0=params["lr0"],
             optimizer=params["optimizer"],

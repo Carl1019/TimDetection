@@ -1,6 +1,6 @@
-train: D:\SYDE770 Project\TimDetection\Dataset\train\images
-val: D:\SYDE770 Project\TimDetection\Dataset\valid\images
-test: D:\SYDE770 Project\TimDetection\Dataset\test\images
+train: /home/student08/TimDetection/Dataset/train/images
+val: /home/student08/TimDetection/Dataset/valid/images
+test: /home/student08/TimDetection/Dataset/test/images
 
 nc: 2
 names: ['Cup', 'Timmies']

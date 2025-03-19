@@ -1,0 +1,42 @@
+{
+  "os": "Linux-5.15.0-134-generic-x86_64-with-glibc2.35",
+  "python": "CPython 3.12.2",
+  "startedAt": "2025-03-19T22:27:36.968748Z",
+  "program": "/home/student08/TimDetection/BayesianTunning.py",
+  "codePath": "BayesianTunning.py",
+  "git": {
+    "remote": "https://github.com/Carl1019/TimDetection.git",
+    "commit": "9a2239dc95e672aea47651cf343ecd665ceb2f32"
+  },
+  "email": "993657526@qq.com",
+  "root": "/home/student08/TimDetection",
+  "host": "ece-nebula11",
+  "executable": "/home/student08/bin/python",
+  "codePathLocal": "BayesianTunning.py",
+  "cpu_count": 12,
+  "cpu_count_logical": 24,
+  "gpu": "NVIDIA RTX A4500",
+  "gpu_count": 1,
+  "disk": {
+    "/": {
+      "total": "1003754151936",
+      "used": "772274462720"
+    }
+  },
+  "memory": {
+    "total": "33545461760"
+  },
+  "cpu": {
+    "count": 12,
+    "countLogical": 24
+  },
+  "gpu_nvidia": [
+    {
+      "name": "NVIDIA RTX A4500",
+      "memoryTotal": "21464350720",
+      "cudaCores": 7168,
+      "architecture": "Ampere"
+    }
+  ],
+  "cudaVersion": "12.3"
+}
