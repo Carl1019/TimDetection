@@ -1,0 +1,13 @@
+--index-url https://download.pytorch.org/whl/cu124
+torch
+torchvision
+torchaudio
+
+--index-url https://pypi.org/simple
+matplotlib
+fiftyone
+dvc
+mlflow
+tqdm
+tensorboard
+ultralytics
