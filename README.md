@@ -34,6 +34,7 @@ Configuration:
     1. python train.py --resume
 4. Upgrade and pip WANDB:
     1. pip install --upgrade wandb
+    
 Problems:
 1. mandb virtualize tool use or not? prob use for virtualiza, and shows in report.
 2. watch out the file path in data.yaml(better use absolute path for all path!)
